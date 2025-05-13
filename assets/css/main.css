@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('/assets/fonts/Roboto-Light.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Light.woff') format('woff'),
+      url('/assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('/assets/fonts/Roboto-Medium.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Medium.woff') format('woff'),
+      url('/assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('/assets/fonts/Roboto-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Bold.woff') format('woff'),
+      url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url('/assets/fonts/Roboto-Italic.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Italic.woff') format('woff'),
+      url('/assets/fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('/assets/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-Regular.woff') format('woff'),
+      url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Roboto Regular', monospace;
+  background: #f2f2f2;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-family: 'Roboto Bold', monospace;
+}
+
+#user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.user-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #30d9c5;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #30d9c5BF;
+}
+
+.history {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  max-height: 100px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.leaderboard {
+  margin: 0 0 2rem;
+  color: #ffffff;
+  background: #0d1e40;
+  padding: .1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.leaderboard-header h2 {
+  font-size: 18px;
+}
+
+.leaderboard img {
+  width: 30px;
+  height: 32px;
+  border-radius: 10px;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+
+.leaderboard li {
+  list-style: none;
+  margin-right: 2.5rem;
+}
